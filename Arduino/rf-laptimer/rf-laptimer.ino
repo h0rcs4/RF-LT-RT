@@ -55,7 +55,7 @@ const uint16_t musicNotes[] PROGMEM = { 523, 587, 659, 698, 784, 880, 988, 1046 
 // single analog read with FASTADC defined (see below) takes ~20us on 16MHz arduino
 // so e.g. 10 reads will take 200 ms, which gives resolution of 5 RSSI reads per ms,
 // this means that we can theoretically have 1ms timing accuracy :)
-#define RSSI_READS 2 // 5 should give about 10 000 readings per second 5/16Mhz 2/8Mhz
+#define RSSI_READS 2 // 5 should give about 10 000 readings per second 5 too mutch, not precise
 
 // input control byte constants
 #define CONTROL_START_RACE 1
@@ -71,7 +71,7 @@ const uint16_t musicNotes[] PROGMEM = { 523, 587, 659, 698, 784, 880, 988, 1046 
 #define CONTROL_DATA_REQUEST 255
 
 //----- RSSI --------------------------------------
-#define FILTER_ITERATIONS 3 // 5/16Mhz 3/8Mhz 
+#define FILTER_ITERATIONS 3 // 5 too mutch, not precise
 uint16_t rssiArr[FILTER_ITERATIONS + 1];
 uint16_t rssiThreshold = 0;
 uint16_t rssi;
