@@ -324,6 +324,7 @@ void incChannel() {
         channelIndex++;
     } else { channelIndex = 0; }
     setChannelModule(channelIndex);
+    rssiThreshold = ChRSSI[channelIndex];
     wait_rssi_ready();
 }
 // ----------------------------------------------------------------------------
@@ -332,18 +333,21 @@ void decChannel() {
         channelIndex--;
     } else { channelIndex = 47; }
     setChannelModule(channelIndex);
+    rssiThreshold = ChRSSI[channelIndex];
     wait_rssi_ready();
 }
 // ----------------------------------------------------------------------------
 void incThreshold() {
     if (rssiThreshold < RSSI_MAX) {
         rssiThreshold++;
+        ChRSSI[channelIndex] = rssiThreshold;
     }
 }
 // ----------------------------------------------------------------------------
 void decThreshold() {
     if (rssiThreshold > RSSI_MIN) {
         rssiThreshold--;
+        ChRSSI[channelIndex] = rssiThreshold;
     }
 }
 // ----------------------------------------------------------------------------
@@ -364,6 +368,7 @@ void setThreshold() {
         rssiThreshold = 0;
         playClearThresholdTones();
     }
+    ChRSSI[channelIndex] = rssiThreshold;
 }
 // ----------------------------------------------------------------------------
 uint16_t getFilteredRSSI() {
