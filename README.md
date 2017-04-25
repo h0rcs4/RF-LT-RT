@@ -1,7 +1,8 @@
 # RF-LT-RT
 RF Lap timer and Race Tracker
 Az android és arduino kód a Voroshkov Solo-DIY-Laptimer alapján készült.
-Bővített funkciók
+
+Bővített funkciók:
 
 - Magyar nyelv
 - Időzítés és RSSI olvasás újra időzítve a pontosság miatt
@@ -16,9 +17,11 @@ Bővített funkciók
 - Köridő szerkesztés (büntetések)
 
 Fejlesztés alatt:
+
 Android:
 - Pilóta lista mentése
 - Alap opciók mentése (beszéd, büntetés mértéke)
+
 Event logger (web):
 - Web alapú verseny/futam kiértékelés és statisztikák
 - Eredmények feltöltése android kliensről
