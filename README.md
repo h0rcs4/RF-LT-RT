@@ -15,12 +15,15 @@ Bővített funkciók:
 - Verseny indítás opciók
 - Verseny típus opciók
 - Köridő szerkesztés (büntetések)
+- Pilóta lista mentése
+- Alap opciók mentése (beszéd, büntetés mértéke, körszám stb...)
+- RF Analyzer
 
 Fejlesztés alatt:
 
 Android:
-- Pilóta lista mentése
-- Alap opciók mentése (beszéd, büntetés mértéke)
+- Több eszköz kezelése
+- Race kontrol
 
 Event logger (web):
 - Web alapú verseny/futam kiértékelés és statisztikák
@@ -42,11 +45,13 @@ Translated to Hungarian, and up to more features:
 - Race start options
 - Race type options
 - Manage lap times / penalty
+- Save pilot list
+- Save general options
 
 Upcoming features:
 Lap timer (android):
-- Save pilot list
-- Save general options
+- Control more than one arduino
+- Race control
 
 Race tracker:
 - Web based event logger and statistics
